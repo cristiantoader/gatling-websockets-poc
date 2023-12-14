@@ -1,0 +1,10 @@
+{
+  "simulation": "org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation",
+  "simulationId": "bdsguiwebsocketslatencysimulation-20231213174556566",
+  "start": 1702489557561,
+  "description": "1234",
+  "scenarios": ["read-scenario", "write-scenario"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,17 @@
+RUN	org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation	bdsguiwebsocketslatencysimulation	1702487420150	asd	3.9.5
+USER	basic-scenario	START	1702487421179
+REQUEST		Connect GUI	1702487421154	1702487421207	OK	 
+REQUEST		Connect BSD	1702487421212	1702487421223	KO	i.n.h.c.h.w.WebSocketClientHandshakeException: Invalid handshake response getStatus: 404 
+REQUEST		BSD send message	1702487422252	1702487422252	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422255	1702487422255	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422256	1702487422256	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422256	1702487422256	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422257	1702487422257	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422257	1702487422257	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422257	1702487422257	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422258	1702487422258	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422258	1702487422258	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487422259	1702487422259	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		Close GUI WS	1702487422264	1702487422268	OK	 
+ERROR	Close BSD WS: Client issued close order but WebSocket was already crashed: i.n.h.c.h.w.WebSocketClientHandshakeException: Invalid handshake response getStatus: 404  	1702487422272
+USER	basic-scenario	END	1702487422276

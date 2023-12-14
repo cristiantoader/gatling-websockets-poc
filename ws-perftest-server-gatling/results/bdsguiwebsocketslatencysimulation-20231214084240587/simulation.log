@@ -1,0 +1,19 @@
+RUN	org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation	bdsguiwebsocketslatencysimulation	1702543360587	asd	3.9.5
+USER	write-scenario	START	1702543361828
+USER	read-scenario	START	1702543361828
+REQUEST		Connect BDS	1702543361801	1702543361837	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		Connect GUI	1702543361801	1702543361837	KO	j.n.ConnectException: Connection refused: no further information
+ERROR	Close GUI WS: Client issued close order but WebSocket was already crashed: j.n.ConnectException: Connection refused: no further information 	1702543361855
+USER	read-scenario	END	1702543361862
+REQUEST		BDS send message	1702543361870	1702543361870	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361874	1702543361874	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361875	1702543361875	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361876	1702543361876	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361877	1702543361877	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361877	1702543361877	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361878	1702543361878	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361878	1702543361878	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361879	1702543361879	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BDS send message	1702543361883	1702543361883	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+ERROR	Close BDS WS: Client issued close order but WebSocket was already crashed: j.n.ConnectException: Connection refused: no further information 	1702543361885
+USER	write-scenario	END	1702543361887

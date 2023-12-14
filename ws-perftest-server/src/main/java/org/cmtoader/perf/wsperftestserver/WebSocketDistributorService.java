@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 
+import java.util.Random;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Service
@@ -23,11 +24,22 @@ public class WebSocketDistributorService {
         bdsWebSocketSessions.add(session);
     }
 
+    public void deregisterBsdWebSocketSession(WebSocketSession session) {
+        bdsWebSocketSessions.remove(session);
+    }
+
+    public void deregisterGuiWebSocketSession(WebSocketSession session) {
+        this.guiWebSocketSessions.remove(session);
+    }
+
     public void handleBdsTextMessage(TextMessage message) {
         log.info("Received text message {}.", message);
 
-        Try.run(() -> Thread.sleep(100))
-           .onFailure(err -> log.error("Failed to sleep for message.", err));
+//        Try.run(() -> Thread.sleep((int) Math.floor(new Random().nextGaussian(500, 5))))
+//           .onFailure(err -> log.error("Failed to sleep for message.", err));
+
+        Try.run(() -> Thread.sleep(250))
+                .onFailure(err -> log.error("Failed to sleep for message.", err));
 
         this.guiWebSocketSessions.parallelStream()
                                  .forEach(guiSocket -> Try.run(() -> guiSocket.sendMessage(message))

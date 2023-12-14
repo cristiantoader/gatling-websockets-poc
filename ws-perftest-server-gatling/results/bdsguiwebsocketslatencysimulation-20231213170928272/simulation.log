@@ -1,0 +1,17 @@
+RUN	org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation	bdsguiwebsocketslatencysimulation	1702487368272	 	3.9.5
+USER	basic-scenario	START	1702487369335
+REQUEST		Connect GUI	1702487369301	1702487369367	OK	 
+REQUEST		Connect BSD	1702487369373	1702487369388	KO	i.n.h.c.h.w.WebSocketClientHandshakeException: Invalid handshake response getStatus: 404 
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370411
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370412
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370412
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370412
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370413
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370413
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370413
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370414
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370414
+ERROR	BSD send message: Failed to build request: No attribute named 'id' is defined 	1702487370414
+REQUEST		Close GUI WS	1702487370419	1702487370422	OK	 
+ERROR	Close BSD WS: Client issued close order but WebSocket was already crashed: i.n.h.c.h.w.WebSocketClientHandshakeException: Invalid handshake response getStatus: 404  	1702487370425
+USER	basic-scenario	END	1702487370429

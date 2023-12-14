@@ -1,0 +1,20 @@
+RUN	org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation	bdsguiwebsocketslatencysimulation	1702489556566	1234	3.9.5
+USER	read-scenario	START	1702489557598
+USER	write-scenario	START	1702489557598
+REQUEST		Connect GUI	1702489557561	1702489557639	OK	 
+REQUEST		Connect GUI	1702489557561	1702489557639	OK	 
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557664
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557666
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557666
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557667
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557667
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557667
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557667
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557668
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557668
+ERROR	BSD send message: Failed to build request: Couldn't fetch open webSocket 	1702489557668
+ERROR	Close BSD WS: Failed to build request: Couldn't fetch open webSocket 	1702489557671
+USER	write-scenario	END	1702489557675
+REQUEST		test	1702489557639	1702489577654	KO	Check test timeout
+REQUEST		Close GUI WS	1702489577664	1702489577665	OK	 
+USER	read-scenario	END	1702489577669

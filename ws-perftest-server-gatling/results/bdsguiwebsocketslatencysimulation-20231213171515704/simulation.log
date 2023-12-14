@@ -1,0 +1,16 @@
+RUN	org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation	bdsguiwebsocketslatencysimulation	1702487715704	asd	3.9.5
+USER	basic-scenario	START	1702487716738
+REQUEST		Connect BSD	1702487716713	1702487716763	KO	i.n.h.c.h.w.WebSocketClientHandshakeException: Invalid handshake response getStatus: 404 
+REQUEST		BSD send message	1702487717788	1702487717788	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717790	1702487717790	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717791	1702487717791	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717791	1702487717791	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717792	1702487717792	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717792	1702487717792	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717793	1702487717793	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717793	1702487717793	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717794	1702487717794	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+REQUEST		BSD send message	1702487717794	1702487717794	KO	Client issued text frame but server has closed the WebSocket and max reconnects is reached
+ERROR	Close GUI WS: Failed to build request: Couldn't fetch open webSocket 	1702487717796
+ERROR	Close BSD WS: Client issued close order but WebSocket was already crashed: i.n.h.c.h.w.WebSocketClientHandshakeException: Invalid handshake response getStatus: 404  	1702487717798
+USER	basic-scenario	END	1702487717801

@@ -1,6 +1,7 @@
 package org.cmtoader.perf.wsperftestserver;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
@@ -18,6 +19,12 @@ public class BdsWebSocketHandler extends TextWebSocketHandler {
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         super.afterConnectionEstablished(session);
         this.webSocketDistributorService.registerBdsWebSocketSession(session);
+    }
+
+    @Override
+    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+        super.afterConnectionClosed(session, status);
+        this.webSocketDistributorService.deregisterBsdWebSocketSession(session);
     }
 
     @Override

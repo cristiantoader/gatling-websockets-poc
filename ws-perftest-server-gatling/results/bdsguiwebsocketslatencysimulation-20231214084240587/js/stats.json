@@ -1,0 +1,333 @@
+{
+  "type": "GROUP",
+"name": "All Requests",
+"path": "",
+"pathFormatted": "group_missing-name-b06d1",
+"stats": {
+    "name": "All Requests",
+    "numberOfRequests": {
+        "total": 12,
+        "ok": 0,
+        "ko": 12
+    },
+    "minResponseTime": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "meanResponseTime": {
+        "total": 6,
+        "ok": 0,
+        "ko": 6
+    },
+    "standardDeviation": {
+        "total": 13,
+        "ok": 0,
+        "ko": 13
+    },
+    "percentiles1": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles4": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 12,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 12.0,
+        "ok": 0,
+        "ko": 12.0
+    }
+},
+"contents": {
+"req_connect-bds-9dacc": {
+        "type": "REQUEST",
+        "name": "Connect BDS",
+"path": "Connect BDS",
+"pathFormatted": "req_connect-bds-9dacc",
+"stats": {
+    "name": "Connect BDS",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 0,
+        "ko": 1
+    },
+    "minResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "maxResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "meanResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles2": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles3": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles4": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 1,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 1.0,
+        "ok": 0,
+        "ko": 1.0
+    }
+}
+    },"req_connect-gui-8dbc8": {
+        "type": "REQUEST",
+        "name": "Connect GUI",
+"path": "Connect GUI",
+"pathFormatted": "req_connect-gui-8dbc8",
+"stats": {
+    "name": "Connect GUI",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 0,
+        "ko": 1
+    },
+    "minResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "maxResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "meanResponseTime": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles2": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles3": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "percentiles4": {
+        "total": 36,
+        "ok": 0,
+        "ko": 36
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 1,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 1.0,
+        "ok": 0,
+        "ko": 1.0
+    }
+}
+    },"req_bds-send-messag-52462": {
+        "type": "REQUEST",
+        "name": "BDS send message",
+"path": "BDS send message",
+"pathFormatted": "req_bds-send-messag-52462",
+"stats": {
+    "name": "BDS send message",
+    "numberOfRequests": {
+        "total": 10,
+        "ok": 0,
+        "ko": 10
+    },
+    "minResponseTime": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "group1": {
+    "name": "t < 800 ms",
+    "htmlName": "t < 800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "800 ms <= t < 1200 ms",
+    "htmlName": "t >= 800 ms <br> t < 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t >= 1200 ms",
+    "htmlName": "t >= 1200 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "htmlName": "failed",
+    "count": 10,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 10.0,
+        "ok": 0,
+        "ko": 10.0
+    }
+}
+    }
+}
+
+}

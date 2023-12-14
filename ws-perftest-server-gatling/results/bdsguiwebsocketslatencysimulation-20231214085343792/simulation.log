@@ -1,0 +1,27 @@
+RUN	org.cmtoader.perf.simulation.BdsGuiWebsocketsLatencySimulation	bdsguiwebsocketslatencysimulation	1702544023792	sdf	3.9.5
+USER	write-scenario	START	1702544024753
+REQUEST		Connect BDS	1702544024731	1702544024777	OK	 
+REQUEST		Connect GUI	1702544024783	1702544024789	OK	 
+REQUEST		BDS send message	1702544024797	1702544024797	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024814
+REQUEST		BDS send message	1702544024818	1702544024818	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024819
+REQUEST		BDS send message	1702544024819	1702544024819	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024820
+REQUEST		BDS send message	1702544024820	1702544024820	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024821
+REQUEST		BDS send message	1702544024821	1702544024821	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024822
+REQUEST		BDS send message	1702544024823	1702544024823	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024823
+REQUEST		BDS send message	1702544024824	1702544024824	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024824
+REQUEST		BDS send message	1702544024825	1702544024825	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024825
+REQUEST		BDS send message	1702544024826	1702544024826	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024826
+REQUEST		BDS send message	1702544024827	1702544024827	OK	 
+ERROR	check message client: Failed to build request: Can't cast '' of type class java.lang.String into class [B 	1702544024827
+REQUEST		Close BDS WS	1702544024831	1702544025925	OK	 
+REQUEST		Close GUI WS	1702544025930	1702544025931	OK	 
+USER	write-scenario	END	1702544025935
