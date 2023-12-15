@@ -33,13 +33,13 @@ public class WebSocketDistributorService {
     }
 
     public void handleBdsTextMessage(TextMessage message) {
-        log.info("Received text message {}.", message);
+//        log.info("{}", message);
 
 //        Try.run(() -> Thread.sleep((int) Math.floor(new Random().nextGaussian(500, 5))))
 //           .onFailure(err -> log.error("Failed to sleep for message.", err));
 
-        Try.run(() -> Thread.sleep(250))
-                .onFailure(err -> log.error("Failed to sleep for message.", err));
+//        Try.run(() -> Thread.sleep(250))
+//                .onFailure(err -> log.error("Failed to sleep for message.", err));
 
         this.guiWebSocketSessions.parallelStream()
                                  .forEach(guiSocket -> Try.run(() -> guiSocket.sendMessage(message))
