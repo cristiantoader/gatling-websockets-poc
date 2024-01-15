@@ -33,7 +33,7 @@ public class WebSocketDistributorService {
     }
 
     public void handleBdsTextMessage(TextMessage message) {
-//        log.info("{}", message);
+        System.out.println(message.getPayload());
 
 //        Try.run(() -> Thread.sleep((int) Math.floor(new Random().nextGaussian(500, 5))))
 //           .onFailure(err -> log.error("Failed to sleep for message.", err));
